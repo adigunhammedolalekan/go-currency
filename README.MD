@@ -18,5 +18,5 @@ This is a tiny library to format money into any currency.
 
     formattedStringPounds := currency.Format(currency.EUR, 300) // outputs: £2,560
 
-    formattedStringGhanaCedis := currency.Format(currency.GHS, 2340.90) // outputs: ¢2,340.90
+    formattedStringGhanaCedis := currency.Format(currency.GHS, 2340.90) // outputs: ¢2,340.9
 ```

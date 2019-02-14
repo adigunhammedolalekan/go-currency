@@ -7,6 +7,6 @@ import (
 
 func main() {
 
-	m := currency.Format(currency.NGN, 10000000000000)
-	fmt.Println(m)
+	m := currency.Format(currency.NGN, 100000)
+	fmt.Println(m) // ₦100,000
 }

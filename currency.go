@@ -119,11 +119,9 @@ var (
 	VND Currency = "VND"
 	YER Currency = "YER"
 	ZWD Currency = "ZWD"
-
 )
 
-
-var CURRENCIES = map[Currency]string {
+var CURRENCIES = map[Currency]string{
 	NGN: "₦", PLN: "zł", THB: "฿", ZWD: "Z$",
 	YER: "﷼", VND: "₫", VEF: "Bs", UZS: "лв",
 	UYU: "$U", USD: "$", GBP: "£", UAH: "₴",
@@ -141,6 +139,7 @@ var CURRENCIES = map[Currency]string {
 	TWD: "฿", KZT: "лв", JEP: "£", JMD: "J$",
 	ILS: "₪", IRR: "﷼", IMP: "£", IDR: "Rp",
 	ISK: "kr", HUF: "Ft", HKD: "$", HNL: "L",
+	GHS: "¢",
 }
 
 // Format a number to human readable string

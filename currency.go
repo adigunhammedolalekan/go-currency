@@ -85,7 +85,6 @@ var (
 	OMR Currency = "OMR"
 	PKR Currency = "PKR"
 	PAB Currency = "PAB"
-	PYB Currency = "PYB"
 	PYG Currency = "PYG"
 	PEN Currency = "PEN"
 	PHP Currency = "PHP"
@@ -127,7 +126,21 @@ var (
 var CURRENCIES = map[Currency]string {
 	NGN: "₦", PLN: "zł", THB: "฿", ZWD: "Z$",
 	YER: "﷼", VND: "₫", VEF: "Bs", UZS: "лв",
-	UYU: "$U", USD: "$",
+	UYU: "$U", USD: "$", GBP: "£", UAH: "₴",
+	TVD: "$", TTD: "TT$", THB: "NT$", SYP: "£",
+	SRD: "$", CHF: "CHF", SEK: "kr", LKR: "₨",
+	ZAR: "R", SOS: "S", SBD: "$", SGD: "$",
+	SCR: "₨", RSD: "Дин.", SAR: "﷼", SHP: "£",
+	RUB: "₽", RON: "lei", QAR: "﷼", PLN: "zł",
+	PHP: "₱", PEN: "S/.", PYG: "Gs", PAB: "B/.",
+	PKR: "₨", OMR: "﷼", NOK: "kr", NIO: "C$",
+	NZD: "$", ANG: "ƒ", NPR: "₨", NAD: "$",
+	MZN: "MT", MNT: "₮", MXN: "$", MUR: "₨",
+	MYR: "RM", MKD: "ден", LRD: "$", LBP: "£",
+	LAK: "₭", KGS: "лв", KPW: "₩", KRW: "₩",
+	TWD: "฿", KZT: "лв", JEP: "£", JMD: "J$",
+	ILS: "₪", IRR: "﷼", IMP: "£", IDR: "Rp",
+	ISK: "kr", HUF: "Ft", HKD: "$", HNL: "L",
 }
 
 // Format a number to human readable string
@@ -144,7 +157,6 @@ func Format(currency Currency, amount float64) string {
 
 // Comma formats a string to a readable form
 // 234567.89 = 234,567.89
-
 func Comma(v float64) string {
 	buf := &bytes.Buffer{}
 	if v < 0 {

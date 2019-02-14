@@ -16,7 +16,7 @@ This is a tiny library to format number into any currency.
 
     formattedStringNaira := currency.Format(currency.NGR, 2560) // outputs: ₦2,560
 
-    formattedStringPounds := currency.Format(currency.EUR, 300) // outputs: £2,560
+    formattedStringPounds := currency.Format(currency.EUR, 300) // outputs: £300
 
     formattedStringGhanaCedis := currency.Format(currency.GHS, 2340.90) // outputs: ¢2,340.9
 ```

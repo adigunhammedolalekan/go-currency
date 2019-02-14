@@ -1,7 +1,7 @@
 ## go-currency
 Human readable money format
 
-This is a tiny library to format number into any currency.
+This is a tiny library to format number to any currency.
 
 * Very tiny
 * Supports all earth's currency
